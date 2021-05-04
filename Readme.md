@@ -41,4 +41,4 @@ No seu navegador ou em sua ferramenta preferida para requisições de APIs REST 
 ```
 http://localhost:3000/modulos
 ```
-Obs.: Caso você rode os containers em algum ambiente cloud, troque o 'localhost' pelo endereço do seu servidor.
+Obs.: Caso você rode os containers em algum ambiente cloud, troque o 'localhost' pelo endereço do seu servidor. Não esqueça de adicionar '/modulos' no final do endereço.
