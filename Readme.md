@@ -18,17 +18,22 @@ Crie um arquivo README.md especificando quais comandos precisamos executar para 
 ```
 
 # 💻 Comandos para executar
-1 - Banco de Dados Mysql. 
+1 - Criação da rede
 ```
-docker run --rm -p 3306:3306 --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-mysql wmcruz/desafio1-pfa-mysql
+docker network create wmcruz/desafio1-pfa
 ```
-2 - App rest em Java
+
+2 - Banco de Dados Mysql. 
 ```
-docker run --rm --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-app wmcruz/desafio1-pfa-app
+docker run -d --rm -p 3306:3306 --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-mysql wmcruz/desafio1-pfa-mysql
 ```
-3 - Servidor web de proxy reverso NGINX
+3 - App rest em Java
 ```
-docker run --rm -p 3000:80 --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-nginx wmcruz/desafio1-pfa-nginx
+docker run -d --rm --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-app wmcruz/desafio1-pfa-app
+```
+4 - Servidor web de proxy reverso NGINX
+```
+docker run -d --rm -p 3000:80 --network wmcruz/desafio1-pfa --name wmcruz-desafio1-pfa-nginx wmcruz/desafio1-pfa-nginx
 ```
 
 # 💻 Visualização
@@ -36,3 +41,4 @@ No seu navegador ou em sua ferramenta preferida para requisições de APIs REST 
 ```
 http://localhost:3000/modulos
 ```
+Obs.: Caso você rode os containers em algum ambiente cloud, troque o 'localhost' pelo endereço do seu servidor.
