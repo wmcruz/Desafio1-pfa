@@ -3,6 +3,8 @@
 
 [![Author](https://img.shields.io/badge/author-wmcruz-AD1256?style=flat-square)](https://github.com/wmcruz)
 [![Languages](https://img.shields.io/github/languages/count/wmcruz/Desafio1-pfa?color=%23AD1256&style=flat-square)](#)
+[![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://https://docker.com/)
+[![Maven](https://badgen.net/badge/icon/maven?icon=maven&label)](https://https://maven.apache.org/)
 ![GitHub stars](https://img.shields.io/github/stars/wmcruz/Desafio1-pfa?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/wmcruz/Desafio1-pfa?style=flat-square)
 
